@@ -40,7 +40,7 @@ function displayResult() {
         totalScore += answerScores[answer];
     }
 
-    let resultText = document.getElementById('result-text');
+    let resultText = document.getElementById("result-text");
     if (totalScore <= 5) {
         resultText.textContent = "You're book genre is Mystery/Thriller!";
     } else if (totalScore >= 6 && totalScore <= 10) {
@@ -52,5 +52,5 @@ function displayResult() {
     }
 }
 
-let resultButton = document.getElementById('result-container');
+let resultButton = document.getElementById("show-result");
 resultButton.addEventListener('click', displayResult);
